@@ -1,61 +1,82 @@
---go use entity hub--efe is COOOOL--
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+-- Gui to Lua
+-- Version: 3.2
 
-local Window = Library.CreateLib("Entity Hub", "DarkTheme")
---sekmeler--
-local Tab1 = Window:NewTab("Credits")
-local Tab2 = Window:NewTab("Reanimation")
-local Tab3 = Window:NewTab("Scripts")
+-- Instances:
 
---yazılar credits için--
-local Section = Tab1:NewSection("Credits")
+local keyguientitiy = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local key = Instance.new("TextBox")
+local title = Instance.new("TextLabel")
+local Login = Instance.new("TextButton")
 
-Section:NewLabel("Gui,Script Converting,Reanims : Efe skid#1981")
+--Properties:
 
-Section:NewLabel("Script Converting,Reanims : Nendra#2026")
+keyguientitiy.Name = "key gui entitiy"
+keyguientitiy.Parent = game.CoreGui
 
---kategori reanim için--
-local Section4 = Tab2:NewSection("Reanimations")
+main.Name = "main"
+main.Parent = keyguientitiy
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.369909495, 0, 0.207011685, 0)
+main.Size = UDim2.new(0, 229, 0, 350)
+main.Image = "rbxassetid://3570695787"
+main.ImageColor3 = Color3.fromRGB(204, 204, 204)
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+main.Active = true
+main.Draggable = false
 
-Section4:NewButton("EfeReanim (Best)", "Efe-'i miss EfeHub'", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/skidgui/main/EfeReanimate"))()
-end)
+key.Name = "key"
+key.Parent = main
+key.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+key.BorderSizePixel = 0
+key.Position = UDim2.new(0.0655021816, 0, 0.374285698, 0)
+key.Size = UDim2.new(0, 200, 0, 50)
+key.Font = Enum.Font.GothamBlack
+key.Text = "Key"
+key.TextColor3 = Color3.fromRGB(0, 0, 0)
+key.TextSize = 14.000
 
-Section4:NewButton("Permanim", "this is a permanim Made By Nendra#2026", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/Permanim"))()
-end)
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 0.450
+title.BorderSizePixel = 0
+title.Position = UDim2.new(0.0655021816, 0, 0.105714284, 0)
+title.Size = UDim2.new(0, 200, 0, 50)
+title.Font = Enum.Font.GothamBlack
+title.Text = "Get Key From Discord"
+title.TextColor3 = Color3.fromRGB(0, 0, 0)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
 
---kategori scripts için--
-local Section1 = Tab3:NewSection("EfeReanim requiring Scripts")
-local Section2 = Tab3:NewSection("Permanim requiring Scripts")
-local Section3 = Tab3:NewSection("No Reanim requiring Scripts")
+Login.Name = "Log in"
+Login.Parent = main
+Login.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Login.BackgroundTransparency = 0.400
+Login.BorderSizePixel = 0
+Login.Position = UDim2.new(0.0655021816, 0, 0.657142878, 0)
+Login.Size = UDim2.new(0, 200, 0, 50)
+Login.Font = Enum.Font.GothamBlack
+Login.Text = "Log in"
+Login.TextColor3 = Color3.fromRGB(0, 0, 0)
+Login.TextScaled = true
+Login.TextSize = 14.000
+Login.TextWrapped = true
+Login.MouseButton1Down:connect(function()
+	if key.Text == "IFBSKNF93429348NKVBDFGNMDGFB" then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/Entity/main/main", true))()
+		main.Visible = false
+	else
+		game.StarterGui:SetCore("ChatMakeSystemMessage", {
+			Text = "[Entity Hub] Wrong Key (key might be changed)",
+			Color = Color3.fromRGB(255, 10, 70),
+			TextSize = 18,
+			Font = Enum.Font.Ubuntu
+		});
+	end
 
---buttonlar scripts için--
-Section1:NewButton("Gale Fighter", "A true Fighter", function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/gale%20fighter"))()
-end)
-
-Section1:NewButton("Neptunian V", "who knows how to use this sword", function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/skidgui/main/neptun_v"))()
-end)
-
-Section1:NewButton("Memeus 2.5", "this script was my fav so i converted for 'Efe`s Hub'", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/memeus%202.5"))()
-end)
-
-Section1:NewButton("Meme Animations (not fully FE)", "Cool animations in it", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/memeanim"))()
-end)
-
-Section1:NewButton("Xester The Card Master (still in Dev)", "Not Fully Fe Made by Efe", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/XESTER"))()
-end)
-
---waym scripts--
-Section2:NewButton("Techno F A I R Y", "good script made by Nendra#2026", function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/technofairy"))()
-end)
---scripts reanimatesiz buttonlar--
-Section3:NewButton("Skate Board", "go skate in real smh", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/skateboard"))()
 end)
