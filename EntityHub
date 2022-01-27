@@ -1,7 +1,7 @@
 --go use entity hub--
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 
-local Window = Library.CreateLib("Entity Hub", "BlackTheme")
+local Window = Library.CreateLib("Entity Hub", "DarkTheme")
 --sekmeler--
 local Tab1 = Window:NewTab("Credits")
 local Tab2 = Window:NewTab("Reanimation")
