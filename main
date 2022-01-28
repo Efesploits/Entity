@@ -47,6 +47,6 @@ Section1:NewButton("Xester The Card Master (still in Dev)", "Not Fully Fe Made b
 end)
 
 Section1:NewButton("KillBot", "GLoves are not fe Converted by Efe", function()
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/XESTER"))()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/KillBot"))()
 end)
 
