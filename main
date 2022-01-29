@@ -5,7 +5,8 @@ local Window = Library.CreateLib("Entity Hub", "DarkTheme")
 --sekmeler--
 local Tab1 = Window:NewTab("Credits")
 local Tab2 = Window:NewTab("Reanimation")
-local Tab3 = Window:NewTab("Scripts")
+local Tab3 = Window:NewTab("No Hat requiring Scripts")
+local Tab3 = Window:NewTab("Hat requiring Scripts")
 
 --yazılar credits için--
 local Section = Tab1:NewSection("Credits")
@@ -22,7 +23,8 @@ end)
 
 
 --kategori scripts için--
-local Section1 = Tab3:NewSection("EfeReanim requiring Scripts")
+local Section1 = Tab3:NewSection("No Hat requiring Scripts")
+local Section2 = Tab4:NewSection("Hat requiring Scripts")
 
 
 --buttonlar scripts için--
@@ -30,9 +32,6 @@ Section1:NewButton("Gale Fighter", "A true Fighter", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/gale%20fighter"))()
 end)
 
-Section1:NewButton("Neptunian V", "who knows how to use this sword", function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/skidgui/main/neptun_v"))()
-end)
 
 Section1:NewButton("Memeus 2.5", "Dead memes lool", function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/memeus%202.5"))()
@@ -49,4 +48,18 @@ end)
 Section1:NewButton("KillBot", "GLoves are not fe Converted by Efe", function()
      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/KillBot"))()
 end)
+
+--hat scriptleri--
+
+Section2:NewButton("Neptunian V", "who knows how to use this sword", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/skidgui/main/neptun_v"))()
+end)
+
+
+Section2:NewButton("Wanderer", "Who am i? Where is this", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/Wanderer"))()
+end)
+
+
+
 
