@@ -23,7 +23,7 @@ end)
 
 
 --kategori scripts için--
-local Section1 = Tab3:NewSection("No Hat requiring Scripts")
+local Section1 = Tab3:NewSection("No Hat Scripts")
 local Section2 = Tab4:NewSection("Hat requiring Scripts")
 
 
