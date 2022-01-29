@@ -61,7 +61,7 @@ Section2:NewButton("Wanderer", "Who am i? Where is this", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/Wanderer"))()
 end)
 --settings togglearı--
-
+local Section2 = Tab4:NewSection("Settings")
 Section3:NewToggle("Fling", "fling toggle", function(state)
     if state then
         _G.Fling = true
