@@ -5,7 +5,7 @@ local Window = Library.CreateLib("Entity Hub", "DarkTheme")
 --sekmeler--
 local Tab1 = Window:NewTab("Credits")
 local Tab2 = Window:NewTab("Reanimation")
-local Tab3 = Window:NewTab("No Hat requiring Scripts")
+local Tab3 = Window:NewTab("No Hat Scripts")
 local Tab4 = Window:NewTab("Hat requiring Scripts")
 
 --yazılar credits için--
