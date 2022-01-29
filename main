@@ -7,6 +7,7 @@ local Tab1 = Window:NewTab("Credits")
 local Tab2 = Window:NewTab("Reanimation")
 local Tab3 = Window:NewTab("No Hat Scripts")
 local Tab4 = Window:NewTab("Hat requiring Scripts")
+local tab5 = Window:NewTab("Setttings")
 
 --yazılar credits için--
 local Section = Tab1:NewSection("Credits")
@@ -59,7 +60,15 @@ end)
 Section2:NewButton("Wanderer", "Who am i? Where is this", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/Wanderer"))()
 end)
+--settings togglearı--
 
+Section3:NewToggle("Fling", "fling toggle", function(state)
+    if state then
+        _G.Fling = true
+    else
+        _G.Fling = false
+    end
+end
 
 
 
