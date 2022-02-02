@@ -56,9 +56,18 @@ Section2:NewButton("Neptunian V", "who knows how to use this sword", function()
 end)
 
 
-Section2:NewButton("Wanderer", "Who am i? Where is this", function()
+Section2:NewButton("Wanderer", "Who am i?", function()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/Wanderer"))()
 end)
+
+Section2:NewButton("Voodoo Child V2", "epic :sunglasses:", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/Voodoo%20Child%20V2"))()
+end)
+
+
+
+
+
 --settings togglearı--
 local Section4 = Tab5:NewSection("Settings")
 
