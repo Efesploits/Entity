@@ -13,6 +13,8 @@ local Section = Tab1:NewSection("Credits")
 
 Section:NewLabel("Gui,Script Converting,Reanims : Efe skid#1981")
 
+Section:NewLabel("Reanims and more : Gelatek#0814")
+
 
 --kategori reanim için--
 local Section4 = Tab2:NewSection("Reanimations")
@@ -21,6 +23,9 @@ Section4:NewButton("EfeReanim (Best)", "Efe-'i miss EfeHub'", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/skidgui/main/EfeReanimate"))()
 end)
 
+Section4:NewButton("EfeReanim R15 (Gelatek)", "Gelatek- credit me or ill kill you'", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Efesploits/scripts/main/r15"))()
+end)
 
 --kategori scripts için--
 local Section1 = Tab3:NewSection("No Hat Scripts")
